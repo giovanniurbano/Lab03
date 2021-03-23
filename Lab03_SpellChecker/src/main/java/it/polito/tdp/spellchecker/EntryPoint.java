@@ -4,7 +4,7 @@ import javafx.application.Application;
 import static javafx.application.Application.launch;
 
 import it.polito.tdp.spellchecker.FXMLController;
-import it.polito.tdp.spellchecker.model.Model;
+import it.polito.tdp.spellchecker.model.Dictionary;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -20,7 +20,7 @@ public class EntryPoint extends Application {
         
         FXMLController controller = loader.getController() ;
         
-        Model model = new Model();
+        Dictionary model = new Dictionary();
         controller.setModel(model);
         
         Scene scene = new Scene(root);
