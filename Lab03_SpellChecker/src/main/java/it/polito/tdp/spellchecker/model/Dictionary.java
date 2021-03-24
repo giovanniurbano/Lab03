@@ -27,7 +27,7 @@ public class Dictionary {
 	
 	public void loadDictionary(String lingua) {
 		try {
-			String nomeFile = "src\\main\\resources\\"+lingua+".txt";
+			String nomeFile = "src/main/resources/"+lingua+".txt";
 			FileReader fr = new FileReader(nomeFile);
 			BufferedReader br = new BufferedReader(fr);
 			String word;

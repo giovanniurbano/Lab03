@@ -64,9 +64,6 @@ public class FXMLController {
     		return;
     	parole = parole.replaceAll("[.,?\\/#!$%\\^&\\*;:{}=\\-_'~()\\[\\]\"]", "");
     	
-    	if(!parole.matches("([a-z]*)"))
-    		return;
-    	
     	String words[] = parole.split(" ");
     	for(String w : words)
     		input.add(w);
